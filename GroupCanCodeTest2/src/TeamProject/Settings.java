@@ -23,9 +23,4 @@ class Settings{
         //Need a privacysettings class
         //delegate the int privacySetting to the privacysettings class? //aggregation? 
     }
-
-    //Parameters would be an object of "Post" which is not yet created.
-    public void deletePost(){
-    	//Remove the post from the database/profile.
-    }
 }

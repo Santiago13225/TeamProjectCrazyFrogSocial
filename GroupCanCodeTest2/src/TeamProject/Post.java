@@ -1,3 +1,4 @@
+package TeamProject;
 class Post {
     private String postDescription;
     //Temp placeholder for img

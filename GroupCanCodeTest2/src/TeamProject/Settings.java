@@ -13,7 +13,7 @@ class Settings{
     public void changePassword(String newPassword){
         this.newPassword = newPassword;
     }
-    public void changeLayout(int layoutValue{
+    public void changeLayout(int layoutValue){
      /*   CrazyFrogLayouts userLayout = new CrazyFrogLayouts(); //a new class called CrazyFrogLayouts which handles the layout settings
           userLayout.changeLayout(layoutValue); //delegates to the method in CrazFrogLayouts
           //(Design example - Aggregation)

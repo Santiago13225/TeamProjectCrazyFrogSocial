@@ -14,7 +14,7 @@ public class TeamProjectTest2 {
 		System.out.println("SacStateID - This line was added by Tyler Ito.");
 		System.out.println("SacStateID - This line was added by Christian Long.");
 		System.out.println("SacStateID - This line was added by Ramo Tucakovic.");
-		System.out.println("219456940 - This line was added by Enoch Hs.");
+		System.out.println("219456940 - This line was added by Enoch Hsu.");
 		System.out.println("SacStateID - This line was added by First name Last	name.");
 	}
 		

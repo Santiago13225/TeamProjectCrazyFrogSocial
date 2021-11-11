@@ -1,5 +1,5 @@
 package TeamProject;
-class Comment {
+public class Comment {
     
     private String user;
     private String postComment;

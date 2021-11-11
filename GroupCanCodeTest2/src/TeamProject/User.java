@@ -16,7 +16,7 @@ public class User{
         this.phoneNumber = phoneNumber;
         showAds = true;
     }
-    public static void showAds(public Premium){
+    public static void premiumBenefits(public Premium){
         if(Premium){
             showAds = false;
         }

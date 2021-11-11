@@ -6,7 +6,7 @@ class PremiumStatus{
         Premium = true;
     }
     public static void Advertising(){
-        User.showAds(Premium);
+        User.premiumBenefits(Premium);
     }
 
 }

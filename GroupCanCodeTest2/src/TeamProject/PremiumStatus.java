@@ -1,3 +1,4 @@
+package TeamProject;
 class PremiumStatus{
     private boolean Premium;
 

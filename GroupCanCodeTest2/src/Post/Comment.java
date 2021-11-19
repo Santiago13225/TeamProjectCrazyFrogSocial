@@ -1,5 +1,5 @@
 package TeamProject;
-public class Comment {
+public class Comment extends Post{
     
     private String user;
     private String postComment;
@@ -15,16 +15,15 @@ public class Comment {
      public void createComment(user, postComment){
         //Pop up confirming that comment was created
         System.out.println("Comment created");
-    }
+     }
     
     //Delete Comment Method
     public void deleteComment(user, deleteComment){
     /* remove comment */
 
     }
-
     public void editComment(user, editComment){
         //edit comment made by user
     }
-}
+    }
 }

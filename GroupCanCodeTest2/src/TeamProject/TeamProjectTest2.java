@@ -24,16 +24,13 @@ public class TeamProjectTest2 {
 		//Login c = new CrazyFrogSignIn();
 		Login cc = new CrazyFrogSignIn("santiACC1", "password1");
 		//Login.LoginMethod();
-		System.out.println("CrazyFrogSignIn: " +  cc.toString());
-		
+		System.out.println("CrazyFrogSignIn: " + cc.toString());
+
 		// CustomLogin cfSignIn = new CustomLogin("usernames.txt"); //create the directory
-	    // interpretChoice(cfSignIn); // run the menu and interpret choices
-		
+		// interpretChoice(cfSignIn); // run the menu and interpret choices
+
 	}
-	
-	
 	/*
-	
 	 public static char run(char cond, String phrase, Scanner console, char option){//Receives input.
 	      return process(cond, phrase, console, option);//Sends input elsewhere for processing.
 	   }

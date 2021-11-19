@@ -1,20 +1,17 @@
 package TeamProject;
 class Post {
-<<<<<<< HEAD
     private String user;
     private String postDescription;
     //Temp placeholder for img
     private int picture;
     public Post(String user, String postDescription, int picture){
         this.user = user;
-=======
     private int postID;
     private String postDescription;
     //Temp placeholder for img
     private int picture;
     public Post(int postID, String postDescription, int picture){
         this.postID = postID;
->>>>>>> 70a7b29d4ac45146a3f8ed12a90254474c66c6d5
         this.postDescription = postDescription;
         this.picture = picture;
     }

@@ -6,17 +6,20 @@ public class CrazyFrogSignIn implements Login {
 	private String password;
 	boolean LoginSuccess = false;
 	
-	public static void LoginMethod() {
+
+	public void LoginMethod() {
 		System.out.println("Login.java works!");
-		System.out.println("CrazyFrogSignIn.java works!");
+		System.out.println("Login method used: CrazyFrogSignIn");
 	}
 	
-	public void openCrazyFrogLogin() {
-		System.out.println("CrazyFrog login successful!");
+	public CrazyFrogSignIn() {
+		System.out.println("CrazyFrog login test successful!");
 	}
 	
-	public void openCrazyFrogLogin(String username, String password) {
+	public CrazyFrogSignIn(String username, String password) {
 		System.out.println("CrazyFrog login successful!");
+		System.out.println("Username used: " + username);
+		System.out.println("Password used: " + password);
 	}
 	
 	public void authenticate() {

@@ -1,1 +1,83 @@
 Comments composition
+package TeamProject;
+import java.util.ArrayList;
+import java.util.List;
+import java.time.LocalDate;
+
+public class Comment implements Post{
+	private String date;
+	private String postContent;
+	private int image;
+	private int likes;
+	private int dislikes;
+	private List<Comment> subcomments;
+	
+	
+	public Comment(String postContent, int image) {
+		this.date = date.toString();
+		this.postContent = postContent;
+		this.image = image;
+		this.likes = 0;
+		this.dislikes = 0;
+		subcomments = new ArrayList<Comment>();
+	}
+	
+	public Comment(String postContent) {
+		this.date = date.toString();
+		this.postContent = postContent;
+		this.likes = 0;
+		this.dislikes = 0;
+		subcomments = new ArrayList<Comment>();
+	}
+	
+	public Comment(int image) {
+		this.date = date.toString();
+		this.image = image;
+		this.likes = 0;
+		this.dislikes = 0;
+		subcomments = new ArrayList<Comment>();
+	}
+
+	public void add(Comment c) {
+		subcomments.add(c);
+	}
+	
+	public void addLike() {
+		this.likes = this.likes + 1;
+	}
+	
+	public void removeLike() {
+		this.likes = this.likes - 1;
+	}
+	
+	public void addDislike() {
+		this.dislikes = this.dislikes + 1;
+	}
+	
+	public void removeDislike() {
+		this.dislikes = this.dislikes - 1;
+	}
+	
+	public void remove(Comment c) {
+		subcomments.remove(c);
+	}
+
+	public List<Comment> getSubComments(){
+		return subcomments;
+	}
+
+	public String toString(){
+		return ("Date: " + date + "\n Image: " + image + "\n Comment: " + postContent + "\n Likes: " + likes + "\n Dislikes: " + dislikes);
+	}
+
+}
+
+
+package TeamProject;
+
+public interface Post{
+	public void addLike();
+	public void removeLike();
+	public void addDislike();
+	public void removeDislike();
+}

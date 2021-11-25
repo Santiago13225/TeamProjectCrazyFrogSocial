@@ -1,29 +1,24 @@
 package TeamProject;
 public class Comment extends Post{
-    
-    private String user;
     private String postComment;
     private String editComment;
     private String deleteComment;
-    
-     public Comment(String user, String postComment, private String editComment, private String deleteComment){
-        this.user = user;
-        this.postComment = postComment;
-        this.editComment = editComment;
-        this.deleteComment = deleteComment;
-        
-     public void createComment(user, postComment){
+     public Comment(){}
+     public Comment(String postID, String postComment) {
+         this.postComment = postComment;
+         this.editComment = editComment;
+         this.deleteComment = deleteComment;
+     }
+     public void createComment(String comment){
         //Pop up confirming that comment was created
         System.out.println("Comment created");
      }
-    
-    //Delete Comment Method
-    public void deleteComment(user, deleteComment){
+    public void deleteComment(){
     /* remove comment */
 
     }
-    public void editComment(user, editComment){
+    public void editComment(){
         //edit comment made by user
     }
     }
-}
+

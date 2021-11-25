@@ -1,4 +1,5 @@
-package TeamProject;
+package EricShwayze.User;
+
 class Post {
     private String user;
     //Temp placeholder for img
@@ -6,6 +7,7 @@ class Post {
     private int postID;
     private String postDescription;
     //Temp placeholder for img
+    public Post(){}
     public Post(int postID, String postDescription, int picture){
         this.postID = postID;
         this.postDescription = postDescription;
@@ -37,7 +39,7 @@ class Post {
     }
 
     public void setPostDescription(String description){
-        this.desciption = desciption;
+        this.postDescription = description;
     }
 
     public void setPicture(int picture){
@@ -46,11 +48,11 @@ class Post {
 
     //getter Methods
     public int getPostID(){
-
+        return postID;
     }
 
     public String getPostDescription(){
-
+        return postDescription;
     }
 
     public int getPicture(){

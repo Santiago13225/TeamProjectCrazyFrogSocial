@@ -1,3 +1,5 @@
+package EricShwayze.User;
+
 public class UserController{
     private User model;
     private UserView view;
@@ -16,32 +18,32 @@ public class UserController{
         model.setPassword(password);
     }
 
-    public void setUserName(String email){
+    public void setUserEmail(String email){
         model.setEmail(email);
     }
 
-    public void setUserName(String phoneNumber){
+    public void setUserPhoneNumber(String phoneNumber){
         model.setPhoneNumber(phoneNumber);
     }
 
     //Getter Methods using MVC
     public String getUserName(){
-        return model.getUserName;
+        return model.getUserName();
     }
 
     public String getPassword(){
-        return model.getPassword;
+        return model.getPassword();
     }
 
     public String getEmail(){
-        return model.getEmail;
+        return model.getEmail();
     }
 
     public String getPhoneNumber(){
-        return model.getPhoneNumber;
+        return model.getPhoneNumber();
     }
 
     public void updateView(){
-        view.printUserDetails(model.getUserName(), model.getEmail(), model.getPhoneNumber())
+        view.printUserDetails(model.getUserName(), model.getEmail(), model.getPhoneNumber());
     }
 }

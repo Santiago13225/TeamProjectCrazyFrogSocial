@@ -1,10 +1,9 @@
 package TeamProject;
-package loginFunctionality;
-package Post;
-package Settings;
-package TeamProject;
+//package loginFunctionality;
+//package Post;
+//package Settings;
 
-public class User{
+public class User extends SignUp{
     private int userID;
     private String userName;
     private String password;
@@ -20,10 +19,8 @@ public class User{
         this.phoneNumber = phoneNumber;
         showAds = true;
     }
-    public static void premiumBenefits(public Premium){
-        if(Premium){
+    public void setPremiumEnabled(){
             showAds = false;
-        }
     }
 
 

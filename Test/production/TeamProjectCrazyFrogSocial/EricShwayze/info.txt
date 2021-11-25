@@ -1,0 +1,1 @@
+Adding MVC, friendlists stuff (restrictions, aggregation, etc)

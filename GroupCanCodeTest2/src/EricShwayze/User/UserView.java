@@ -1,4 +1,7 @@
+package EricShwayze.User;
+
 public class UserView{
+    UserView(){}
     public void printUserDetails(String userName, String email, String phoneNumber){
         System.out.println("User: ");
         System.out.println("Username: " + userName);

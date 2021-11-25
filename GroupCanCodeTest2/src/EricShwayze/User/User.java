@@ -1,9 +1,4 @@
-package TeamProject;
-package loginFunctionality;
-package Post;
-package Settings;
-package TeamProject;
-
+package EricShwayze.User;
 
 //Instance Variables
 public class User{
@@ -16,6 +11,7 @@ public class User{
     private boolean showAds;
 
     //Constructor
+    User(){};
     User(String UserName, String password, String email, String phoneNumber){
         this.userName = userName;
         this.password = password;
@@ -23,15 +19,13 @@ public class User{
         this.phoneNumber = phoneNumber;
         showAds = true;
     }
-    public void premiumBenefits(public Premium){
-        if(Premium){
-            showAds = false;
-        }
+    public void setPremiumEnabled(){
+        showAds = false;
     }
 
     //Setter Variables.
     public void setUserName(String userName){
-        this.userName = username;
+        this.userName = userName;
     }
 
     public void setPassword(String password){
@@ -48,7 +42,7 @@ public class User{
 
     //Getter Variables
     public String getUserName(){
-        return username;
+        return userName;
     }
 
     public String getPassword(){

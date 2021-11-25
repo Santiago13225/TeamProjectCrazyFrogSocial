@@ -1,8 +1,10 @@
+package EricShwayze.User;
+
 public class MVCDriver{
     public static void main(String[] args){
         
         //Grab a user
-        User model = new retrieveUserFromDatabase();
+        User model = retrieveUserFromDatabase();
 
         //Create a view to write user details
         UserView view = new UserView();
@@ -17,9 +19,8 @@ public class MVCDriver{
         controller.updateView();
 
 
-
         //Post Driver
-        Post model2 = new retrievePost();
+        Post model2 = retrievePost();
         PostView view2 = new PostView();
         PostController controller2 = new PostController(model2, view2);
 
@@ -33,16 +34,18 @@ public class MVCDriver{
 
     private static User retrieveUserFromDatabase(){
         User user = new User();
-        User.setUserName("racecar123");
-        User.setPassword("Thisismypassword1");
-        User.setEmail("racecarsgofast@gmail.com");
-        User.setPhoneNumber("9161234567");
+        user.setUserName("racecar123");
+        user.setPassword("Thisismypassword1");
+        user.setEmail("racecarsgofast@gmail.com");
+        user.setPhoneNumber("9161234567");
+        return user;
     }
 
     private static Post retrievePost(){
         Post post = new Post();
-        User.setPostID(123456);
-        User.setPostDescription("This is my first post!");
-        User.setPicture(999);
+        post.setPostID(123456);
+        post.setPostDescription("This is my first post!");
+        post.setPicture(999);
+        return post;
     }
 }

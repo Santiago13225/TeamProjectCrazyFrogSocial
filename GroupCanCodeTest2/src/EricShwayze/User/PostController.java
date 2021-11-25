@@ -1,8 +1,10 @@
+package EricShwayze.User;
+
 public class PostController{
     private Post model;
-    private Post view;
+    private PostView view;
 
-    public PostController(Post model, Post view){
+    public PostController(Post model, PostView view){
         this.model = model;
         this.view = view;
     }

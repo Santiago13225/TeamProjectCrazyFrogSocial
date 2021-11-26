@@ -69,7 +69,7 @@ public class Comment implements Post{
 	}
 
 	public String toString(){
-		return ("Date: " + date + "\n Image: " + image + "\n Comment: " + postContent + "\n Likes: " + likes + "\n Dislikes: " + dislikes);
+		return ("Date: " + date + "\n Image(s): " + image + "\n Comment: " + postContent + "\n Likes: " + likes + "\n Dislikes: " + dislikes);
 	}
 
 }

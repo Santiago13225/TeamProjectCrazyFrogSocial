@@ -1,7 +1,7 @@
 package TeamProject;
 import java.util.ArrayList;
 import java.util.List;
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Comment implements Post{
 	private String date;
@@ -13,6 +13,7 @@ public class Comment implements Post{
 	
 	
 	public Comment(String postContent, int image) {
+		Date date = new Date();
 		this.date = date.toString();
 		this.postContent = postContent;
 		this.image = image;
@@ -22,6 +23,7 @@ public class Comment implements Post{
 	}
 	
 	public Comment(String postContent) {
+		Date date = new Date();
 		this.date = date.toString();
 		this.postContent = postContent;
 		this.likes = 0;
@@ -30,6 +32,7 @@ public class Comment implements Post{
 	}
 	
 	public Comment(int image) {
+		Date date = new Date();
 		this.date = date.toString();
 		this.image = image;
 		this.likes = 0;

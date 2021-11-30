@@ -14,7 +14,7 @@ class Singleton {
     // restrict this class to itself
     private Singleton()
     {
-        loggedInUser = new User();
+        //loggedInUser = new User();
     }
  
     // Method
@@ -43,7 +43,7 @@ public class LoggedInUser extends User implements Login{
         loggedInUser.user.setUserName(UserName);
         loggedInUser.user.setPassword(password);
         loggedInUser.user.setEmail(email);
-        loggedInUser.user.setPremiumEnabled(premium);
+       // loggedInUser.user.setPremiumEnabled(premium);
     }
     public void authenticate(){
 

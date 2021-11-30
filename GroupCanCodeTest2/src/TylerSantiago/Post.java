@@ -1,4 +1,4 @@
-package TeamProject;
+package TylerSantiago;
 
 public interface Post{
 	public void addLike();

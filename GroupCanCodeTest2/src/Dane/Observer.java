@@ -1,4 +1,4 @@
 package Dane;
-public interface UserObserver {
+public interface Observer {
     public void update();
 }

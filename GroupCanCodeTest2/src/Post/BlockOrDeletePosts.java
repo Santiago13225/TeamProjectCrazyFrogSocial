@@ -1,4 +1,4 @@
-package TeamProject;
+package Post;
 
 public class BlockOrDeletePosts {
 

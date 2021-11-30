@@ -1,4 +1,4 @@
-package TeamProject;
+package Post;
 public class Comment extends Post{
     private String postComment;
     private String editComment;

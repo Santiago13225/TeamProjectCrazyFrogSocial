@@ -11,7 +11,7 @@ public class User {
 
     //Constructor
     User(){};
-    User(String UserName, String password, String email, String phoneNumber){
+    User(String userName, String password, String email, String phoneNumber){
         this.userName = userName;
         this.password = password;
         this.email = email;

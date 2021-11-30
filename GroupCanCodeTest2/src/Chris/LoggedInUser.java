@@ -1,4 +1,6 @@
-package TeamProject;
+package Chris;
+
+import User.User;
 //helper class for User Class
 class Singleton {
     // Static variable single_instance of type Singleton
@@ -42,5 +44,8 @@ public class LoggedInUser extends User implements Login{
         loggedInUser.user.setPassword(password);
         loggedInUser.user.setEmail(email);
         loggedInUser.user.setPremiumEnabled(premium);
+    }
+    public void authenticate(){
+
     }
 }

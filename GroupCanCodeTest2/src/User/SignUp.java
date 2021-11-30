@@ -1,4 +1,4 @@
-package TeamProject;
+package User;
 
 public class SignUp{
 	private String birthday,

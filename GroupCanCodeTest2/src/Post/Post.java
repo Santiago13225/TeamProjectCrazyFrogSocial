@@ -1,4 +1,4 @@
-package TeamProject;
+package Post;
 class Post {
     private String user;
     private String postDescription;

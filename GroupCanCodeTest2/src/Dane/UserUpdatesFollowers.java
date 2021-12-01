@@ -7,7 +7,13 @@ import java.util.ArrayList;
 public class UserUpdatesFollowers implements Subject {
     private ArrayList<Observer> followerList = new ArrayList<>();
     private String message;
-
+    private String userName; //this user's list
+    public UserUpdatesFollowers(User s){
+        this.userName = s.getUserName();
+    }
+    public String getUserName(){
+        return userName;
+    }
     @Override
     public void userFollowsMe(Observer o){
         followerList.add(o);
@@ -23,7 +29,7 @@ public class UserUpdatesFollowers implements Subject {
     }
     @Override
     public void displayNewPostToAll(){
-        followerList.forEach(observer -> observer.update());
+        followerList.forEach(observer -> observer.update(userName));
     }
 
 }

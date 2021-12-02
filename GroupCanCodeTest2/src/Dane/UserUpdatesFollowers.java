@@ -7,12 +7,10 @@ import java.util.ArrayList;
 public class UserUpdatesFollowers implements Subject {
     private ArrayList<Observer> followerList = new ArrayList<>();
     private String message;
-    private String userName; //this user's list
-    public UserUpdatesFollowers(User s){
-        this.userName = s.getUserName();
-    }
-    public String getUserName(){
-        return userName;
+    private String postCreator; //updates postCreator's followers
+
+    public String getPostCreator(){
+        return postCreator;
     }
     @Override
     public void userFollowsMe(Observer o){
@@ -23,13 +21,14 @@ public class UserUpdatesFollowers implements Subject {
     public void userUnfollowsMe(Observer o) {
         followerList.remove(o);
     }
-    public void newPost(String message) {
+    public void newPost(String message, String userName) {
+        this.postCreator = userName;
         this.message = message;
         displayNewPostToAll();
     }
     @Override
     public void displayNewPostToAll(){
-        followerList.forEach(observer -> observer.update(userName));
+        followerList.forEach(observer -> observer.update(postCreator, message));
     }
 
 }

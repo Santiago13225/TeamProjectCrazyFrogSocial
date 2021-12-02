@@ -19,7 +19,7 @@ public class User extends SignUp implements Observer{
     private String post;
     private ArrayList<User> followingList = new ArrayList<>();
     //private ArrayList<User> followerList = new ArrayList<>();
-    private UserUpdatesFollowers followerList = new UserUpdatesFollowers(this); //handling followers list
+    private UserUpdatesFollowers followerList = new UserUpdatesFollowers(); //handling followers list
 
     //Constructor
     public User(){
@@ -83,15 +83,11 @@ public class User extends SignUp implements Observer{
         subject.followerList.userFollowsMe(this);  //update subject's follower list
     }
     @Override
-    public void update(String userNamee) {
-        System.out.println("friend made new post!");
-    }
-    public void followers(User subject){
-        //display follows
+    public void update(String postCreator, String message) {
+        System.out.println( postCreator + " made new post titled: "+ message);
     }
     public void makePost(String post){ //notifies followers of new post
-        this.post = post;
-        followerList.newPost(post);
+        followerList.newPost(post, userName);
     }
 
 }

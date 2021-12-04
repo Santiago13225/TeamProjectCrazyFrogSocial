@@ -1,4 +1,4 @@
-package TeamProject;
+package loginFunctionality;
 
 public class AdminLoginFunctionality {
 	
